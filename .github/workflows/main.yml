@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -25,7 +26,7 @@ jobs:
 
       - name: Build with Love.js
         run: |
-          npx love.js game build -c
+          echo "Space Invaders" | npx love.js game build -c
       
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v5.1.1
