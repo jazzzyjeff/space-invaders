@@ -5,10 +5,12 @@
 A simple Space Invaders Game. 
 
 ## 🛠 Usage
-Make sure you have Love2d installed
-- Love2d (https://love2d.org/)
-
-Follow these steps in order to use Love2d
-- Ensure you saved the Lua file as main.lua
-- Drag the folder into love.exe
-- Make sure you drag the folder not file
+1. Build the game by running `npx love.js game build -c`
+2. `cd terraform`
+3. Create `variables.auto.tfvars` file and input the following variables
+    ```bash
+    region = "enter aws region"
+    service = "argocd"
+    domain  = "enter in the route53 domain"
+    ```
+4. `terraform init` > `terraform plan` > `terraform apply -auto-approve`
