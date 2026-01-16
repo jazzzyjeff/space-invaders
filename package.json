@@ -1,0 +1,22 @@
+{
+  "name": "space-invaders",
+  "version": "1.0.0",
+  "description": "A simple Space Invaders Game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazzzyjeff/space-invaders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jazzzyjeff/space-invaders/issues"
+  },
+  "homepage": "https://github.com/jazzzyjeff/space-invaders#readme",
+  "dependencies": {
+    "love.js": "^11.4.1"
+  }
+}
