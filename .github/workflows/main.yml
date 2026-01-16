@@ -1,12 +1,19 @@
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
-
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      operation:
+        required: true
+        default: deploy
+        type: choice
+        options:
+          - deploy
+          - destroy
 jobs:
   deploy:
     runs-on: ubuntu-latest
